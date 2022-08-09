@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Our Love Story</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('fonts/digital.ttf') format("truetype");
+		}
+	</style>
+	<link href="css/default.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/garden.js"></script>
+	<script type="text/javascript" src="js/functions.js"></script>
+</head>
+
+<audio controls autoplay style="display: none;">
+	<source src="assets/yalihamuwenne.mp3?rel=0&autoplay=1" type="audio/ogg">
+	<source src="assets/yalihamuwenne.mp3?rel=0&autoplay=1" type="audio/mpeg">
+	Your browser does not support the audio element.
+</audio>
+
+<body>
+	<div id="mainDiv">
+		<div id="content">
+			<div id="code">
+				<span class="comments">##</span><br>
+				<span class="comments"># Sudu nonaa 🥺❤️,</span><br>
+				<span class="comments"># I made this to celebrate your Birthday 🎂</span><br>
+				<span class="comments">##</span><br>
+				i = Boy(<span class="string">"Themiya"</span>;)<br>
+				u = Girl(<span class="string">"Pavani"</span>;)<br>
+				<span class="comments"># June 05, 2022, That was the first time I told you that <br> I love you.
+				</span><br>
+				i.meet(u)<br>
+				<span class="comments"># Afterwards, We closed to each other. </span><br>
+				we shared our feelings<br>
+				<span class="comments"># July 24, 2022, You became my girlfriend.</span><br>
+				u.you said that "Congratulations aiye🥺❤️
+				I love you too 🙂❤️<br>
+				<span class="comments"># Since then, we loved each other so much...</span><br>
+				our choices & thougts are same at everytime 😲 u r my <span
+					class="string">Sansarini ❤️</span> <br>
+				<span class="comments"># You became my whole world,mom,wife,gf,sister,life...everything 🥺❤️</span><br>
+				and also i'm your <span class="string">Bf,hubby,father,brother,aiya pana,aliya...everthing 🥺❤️</span> <br>
+				<span class="comments"># There were no secrets between us.</span><br>
+				trust(u, i)<br>
+				<span class="comments"># But There are so many promisses between u & me.</span><br>
+				true love(u, i)<br>
+				<span class="comments"># I changed your life & You changed my life too ❤️.</span><br>
+				You light up my soul(u, i)<br>
+				<span class="comments"># Sometimes there are a few conflicts between us.</span><br>
+				<span class="comments"># But we are getting more and more in harmony together.</span><br>
+				mati nangi <br><br>
+				<span class="comments"># You are the greatest love of my life.</span><br>
+				while <span class="keyword">True</span>:<br>
+				<span class="placeholder"></span><span class="keyword">if</span> u.with(i):<br>
+				<span class="placeholder"></span><span class="placeholder"></span>u = everything<br>
+				<span class="placeholder"></span><span class="keyword">else</span>:<br>
+				<span class="placeholder"></span><span class="placeholder"></span>everything = u<br>
+				<span class="comments"># Waiting me marries you, we will be the happiest couple in the world.</span><br>
+				i.marry(u, in_the_future=<span class="keyword">True</span>)<br>
+				i.live_happily_forever_with(u)<br>
+				<span class="comments"># I love you forever.</span><br>
+			</div>
+			<div id="loveHeart">
+				<canvas id="garden"></canvas>
+				<div id="words">
+					<div id="messages">
+						Manika, We have fallen in love with us for
+						<div id="elapseClock"></div>
+					</div>
+					<div id="loveu">
+						Love u forever and ever.<br>
+						<div class="signature">ʕ•̬͡•ʕ•̫͡•♥ Themii & Pavii</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var together = new Date();
+		// 2022.07.24
+		together.setFullYear(2022, 6, 24);
+		together.setHours(22);
+		together.setMinutes(45);
+		together.setSeconds(0);
+		together.setMilliseconds(0);
+
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+			document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				startHeartAnimation();
+			}, 5000);
+
+			timeElapse(together);
+			setInterval(function () {
+				timeElapse(together);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+
+
+</body>
+
+</html>
